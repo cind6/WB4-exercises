@@ -61,10 +61,30 @@ console.log(`the courseId of PROJ500 is titled ${thecourse.Title}`)
 let coursesThatCost50OrLess = [];
 for(let i = 0; i < courseCount ; i++ ){
     if(courses[i].Fee < 50){
-        coursesThatCost50OrLess.push()
+        coursesThatCost50OrLess.push(courses[i])
     }
-    console.log(coursesThatCost50OrLess)
+}
+
+let coursesThatCost50OrLessCount = coursesThatCost50OrLess.length
+
+console.log("Just courses that cost 50 or less")
+
+for(let i = 0 ; i < coursesThatCost50OrLessCount ; i++ ){
+    console.log(coursesThatCost50OrLess[i].Title);
 }
 
 // What classes meet in "Classroom 1"?
+console.log("--------------------------------------")
 let coursesThatMeetInC1 = [];
+
+for(let i = 0 ; i < courseCount ; i++){
+    if(courses[i].Location == "Classroom 1"){
+        coursesThatMeetInC1.push(courses[i]);
+    }
+}
+
+let coursesThatMeetInC1Count = coursesThatMeetInC1.length;
+console.log("Courses that meet in Classroom 1")
+for(let i = 0 ; i < coursesThatMeetInC1Count ; i++ ){
+    console.log(coursesThatMeetInC1[i].Title)
+}
