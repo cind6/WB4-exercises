@@ -10,3 +10,7 @@ let products = [
     // TODO: fill the array with 10 candies of various
     // price ranges
    ];
+
+   // Which candies costs less than $4.00?
+// Which candies has "M&M" its name?
+// Do we carry "Swedish Fish"?
